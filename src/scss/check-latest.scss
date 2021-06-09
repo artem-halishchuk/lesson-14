@@ -1,0 +1,68 @@
+.check-latest {
+  width: 1120px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.check-latest-heading {
+  @include font-700-h2;
+  text-align: center;
+}
+.check-latest-heading::after {
+  content: "";
+  width: 56px;
+  height: 2px;
+  border-radius: 1px;
+  background-color: map-get($text-colors, "heading");
+  display: block;
+  margin: 26px auto 0 auto;
+}
+
+.check-latest-card {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 79px;
+  margin-bottom: 72px;
+}
+.check-latest-card li {
+  box-shadow: 10px 40px 50px rgba(229, 233, 246, 0.4);
+  border-radius: 20px;
+  overflow: hidden;
+  /* display: flex; */
+  width: 350px;
+}
+.check-latest-card li div {
+  margin: 23px 51px 35px 33px;
+}
+.check-latest-card h3 {
+  @include font-700-h2;
+  font-size: 2.1em;
+  line-height: 1.52;
+  margin-bottom: 12px;
+}
+.check-latest-card p {
+  @include font-300-content;
+  font-size: 1.6em;
+  line-height: 1.75;
+  margin-bottom: 25px;
+}
+.check-latest-card a {
+  font-weight: 600;
+  font-size: 1.7em;
+  line-height: 1.65;
+  color: map-get($text-colors, "site-text");
+}
+.check-latest-card a img {
+  transform: rotate(180deg);
+  width: 14px;
+  margin-left: 8px;
+}
+
+.check-out-view {
+  margin-left: auto;
+  margin-right: auto;
+  @include link;
+}
+.check-latest-card article > img {
+  height: 246px;
+  width: auto;
+}
