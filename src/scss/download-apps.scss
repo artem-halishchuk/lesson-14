@@ -5,32 +5,32 @@
   width: 1120px;
   margin-left: auto;
   margin-right: auto;
-}
-image {
-  width: 650px;
-}
-.download-apps-content {
-  flex-direction: column;
-}
-.download-apps-heading {
-  @include font-700-h2;
-  width: 254px;
-}
-.download-apps-heading::after {
-  content: "";
-  width: 56px;
-  height: 2px;
-  border-radius: 1px;
-  background-color: map-get($text-colors, "heading");
-  display: block;
-  margin-top: 26px;
-}
-.download-apps-text {
-  @include font-300-content;
-  margin-top: 33px;
-  width: 420px;
-}
-.download-apps-link {
-  margin-top: 40px;
-  @include link;
+  image {
+    width: 650px;
+  }
+  .download-apps-content {
+    flex-direction: column;
+    .download-apps-heading {
+      @include font-700-h2;
+      width: 254px;
+      &::after {
+        content: "";
+        width: 56px;
+        height: 2px;
+        border-radius: 1px;
+        background-color: map-get($text-colors, "heading");
+        display: block;
+        margin-top: 26px;
+      }
+    }
+    .download-apps-text {
+      @include font-300-content;
+      margin-top: 33px;
+      width: 420px;
+    }
+    .download-apps-link {
+      margin-top: 40px;
+      @include link;
+    }
+  }
 }
