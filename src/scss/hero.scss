@@ -8,31 +8,33 @@
   margin-right: auto;
 }
 
-.logo-header {
-  span {
-    background-color: map-get($site-colors, "general-color");
-    color: map-get($text-colors, "inverse");
-  }
-  strong {
-    color: map-get($text-colors, "heading");
-  }
-}
-
 header {
   display: flex;
   justify-content: space-between;
   background-color: rgb(255, 255, 255);
   padding-top: 60px;
-}
-.nav-header {
-  @include font-400;
-  font-size: 1.8em;
-  line-height: 1.28;
-  color: map-get($text-colors, "content");
-  opacity: 0.5;
-  display: flex;
-  li {
-    margin-left: 40px;
+  nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .logo-header {
+    span {
+      background-color: map-get($site-colors, "general-color");
+      color: map-get($text-colors, "inverse");
+    }
+    strong {
+      color: map-get($text-colors, "heading");
+    }
+  }
+  .nav-header {
+    @include font-400;
+    font-size: 1.8em;
+    line-height: 1.28;
+    color: map-get($text-colors, "content");
+    opacity: 0.5;
+    display: flex;
+    gap: 40px;
   }
 }
 
@@ -40,36 +42,33 @@ header {
   display: flex;
   flex-grow: 1;
   justify-content: space-between;
-}
-.hero-content-article {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: center;
-  width: 445px;
-
-  h1 {
-    @include font-700;
-    width: 427px;
-    font-size: 4.8em;
-    line-height: 1.17;
-  }
-
-  p {
-    @include font-300-hero;
-    width: 440px;
-    margin-top: 25px;
-    font-size: 2.1em;
-    line-height: 1.52;
-  }
-
-  button {
-    @include button-solid;
-  }
-}
-
-.hero-content {
   img {
     width: 600px;
+  }
+  .hero-content-article {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    width: 445px;
+
+    h1 {
+      @include font-700;
+      width: 427px;
+      font-size: 4.8em;
+      line-height: 1.17;
+    }
+
+    p {
+      @include font-300-hero;
+      width: 440px;
+      margin-top: 25px;
+      font-size: 2.1em;
+      line-height: 1.52;
+    }
+
+    button {
+      @include button-solid;
+    }
   }
 }
